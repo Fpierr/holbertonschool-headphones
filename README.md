@@ -1,4 +1,4 @@
-# holbertonschool-headphones
+# Holbertonschool-headphones
 
 ###### By [Fanuel PIERRE](https://www.github.com/Fpierr)
 
@@ -12,3 +12,5 @@ This project consists of creating a complete web page. All HTML/CSS/Accessibilit
 ## Requirements
 - Not allowed to import external CSS framework (like Bootstrap)
 - Not to use Javascript
+
+  ![image_figma](https://github.com/user-attachments/assets/5e253ce6-a7dc-4984-891b-21a2df49caf8)
