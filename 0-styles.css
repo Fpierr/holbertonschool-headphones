@@ -30,7 +30,7 @@ body {
 }
 
 html {
-    font-size: 75%; /* 1rem = 16px */
+    font-size: 75%; /* 1rem = 16px x 0.75 */
 }
 
 a:hover {
@@ -64,7 +64,7 @@ a:hover {
 .navigation {
     display: flex;
     gap: 2rem;
-    background: none; /* Fond transparent */
+    background: none;
 }
 
 .nav-item {
@@ -82,7 +82,7 @@ a:hover {
 
 /* Burger Button */
 .menu-btn {
-    display: none; /* Masqué par défaut */
+    display: none;
 }
 
 .menu-btn:checked ~ .navigation {
