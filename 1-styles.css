@@ -142,6 +142,8 @@ a:hover {
     background-position: center;
     position: relative;
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .header-inner {
@@ -260,6 +262,11 @@ a:hover {
     height: calc(100vh - var(--header-height));
     text-align: center;
     padding: 20px;
+    transition: margin-top 0.3s ease;
+}
+
+.hero {
+    transition: margin-top 0.3s ease;
 }
 
 .hero-content {
@@ -300,10 +307,6 @@ a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.hero {
-    transition: margin-top 0.3s ease;
-}
-
 .menu-btn:checked ~ .hero {
     margin-top: 5rem;
 }
@@ -319,18 +322,35 @@ a:hover {
     }
 
     .logo {
-        margin-left: 5rem;
         position: relative;
-        margin-top: 0rem;
+        margin: 1rem auto;
+    }
+
+    .hero {
+        display: block;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        transition: margin-top 0.3s ease;
     }
 
     .menu-icon {
         display: flex;
     }
 
-    .menu-btn:checked ~ .header-container .hero {
+    .header {
+        flex-wrap: wrap;
         position: relative;
-        margin-top: 40rem;
+    }
+
+    .menu-btn:checked ~ .header-container.hero {
+        margin-top: 4rem;
+    }
+
+    .header-inner .menu-btn:checked ~ .hero {
+        position: relative;
+        margin-top: 4rem;
+        transition: margin-top 0.3s ease;
+        flex-wrap: wrap;
     }
 
     .navigation {
@@ -343,6 +363,7 @@ a:hover {
         background: none;
         width: 100%;
         padding: 20px;
+        margin-top: 2rem;
     }
 
     .menu-btn:checked ~ .navigation {
@@ -382,7 +403,10 @@ a:hover {
     .navigation {
         left: -20px;
         width: calc(100% + 40px);
+        margin-top: 1rem;
     }
+
+
 }
 
 /*====== What we do (wwd) Section =====*/
@@ -457,4 +481,10 @@ a:hover {
 .card p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .group-sound-card {
+        flex-wrap: wrap;
+    }
 }
