@@ -449,16 +449,17 @@ a:hover {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin-top: 0rem;
     margin-bottom: 5rem;
     text-align: center;
-    gap: 2rem;
+    gap: 8rem;
+    padding: 3rem 3rem;
 }
 
 .icon {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
 }
@@ -478,12 +479,13 @@ a:hover {
 .card p {
     font-size: 0.9rem;
     line-height: 1.5rem;
+    max-width: 150px
 }
 
 @media (max-width: 768px) {
     .group-sound-card {
         flex-wrap: wrap;
-        gap: 7rem;
+        gap: 10rem;
     }
     .group-sound-card p {
         max-width: 150px;
@@ -502,7 +504,8 @@ a:hover {
 }
 
 .header-results {
-    margin-top: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0;
 }
 
 .card-results .pentagone {
@@ -520,13 +523,16 @@ a:hover {
     align-items: center;
     text-align: center;
     max-width: 500px;
-    margin: 2 auto;
-    padding: 3rem 1rem;
+    margin: auto;
+    padding: 3rem 3rem;
     flex-wrap: wrap;
+    margin-top: 0;
+    justity-content: center;
 } 
 
 .group-results {
-    gap: 4rem;
+    gap: 2rem;
     max-width: 800px;
     align-items: center;
+    justify-content: center;
 }
